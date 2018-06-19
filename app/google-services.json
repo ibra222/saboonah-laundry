@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "329572025251",
+    "firebase_url": "https://saboonah-684e7.firebaseio.com",
+    "project_id": "saboonah-684e7",
+    "storage_bucket": "saboonah-684e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329572025251:android:a461fbad52c96f61",
+        "android_client_info": {
+          "package_name": "com.ibrahimaboismail.sapoonaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329572025251-6me26oa054m3hg3e645cca1a143qv7ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibrahimaboismail.sapoonaapp",
+            "certificate_hash": "1882579babb2c91f86a570a23e014524d45dc194"
+          }
+        },
+        {
+          "client_id": "329572025251-lk0kc5uue5n8k4jhrdjo94unuka44e4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWtNYlXDoneocU9M_590Y4TD8F1eslk2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329572025251-lk0kc5uue5n8k4jhrdjo94unuka44e4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

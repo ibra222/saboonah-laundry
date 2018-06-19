@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <RelativeLayout
+          android:id="@+id/toolpar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <include layout="@layout/snippet_tob_bar_main"></include>
+
+      </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/toolpar"
+        android:id="@+id/lin1"
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+
+        <Button
+            android:id="@+id/laundry"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قسم الكوي"
+            android:textSize="15sp"
+            android:fontFamily="@font/jf"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/adsbu"/>
+
+        <Button
+            android:id="@+id/presser"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قسم الغسيل"
+            android:textSize="15sp"
+            android:fontFamily="@font/jf"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/adsbu"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/lin1"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgeAds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bash"
+            android:background="@color/main"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bakshafaf"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/titleads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مغسلة صابونة أنشأت في بدايات 2015
+خدماتنا المقدمة في الغسيل والكي وتشمل
+الملابس والسجاد والكنب والستائر ، اول
+مغسلة في التعامل بالنظام الالكتروني"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/jf"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

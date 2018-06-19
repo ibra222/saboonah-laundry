@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bash">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sabooonalogo"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jf"
+                android:text="مغسلة صابونة أنشأت في بدايات 2015
+خدماتنا المقدمة في الغسيل والكي وتشمل
+الملابس والسجاد والكنب والستائر ، اول
+مغسلة في التعامل بالنظام الالكتروني"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                />
+
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="50dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:weightSum="100"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_weight="50"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/ddd"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="0589763594"-->
+                            <!--android:textSize="22sp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_centerVertical="true"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/ic_phone_android_24px"-->
+                            <!--android:layout_toRightOf="@+id/ddd"-->
+                            <!--android:layout_marginLeft="15dp"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_weight="50"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="25dp">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/fff"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="0589763594"-->
+                            <!--android:textSize="22sp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_centerVertical="true"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/ic_phone_android_24px"-->
+                            <!--android:layout_toRightOf="@+id/fff"-->
+                            <!--android:layout_marginLeft="15dp"/>-->
+
+                    <!--</RelativeLayout>-->
+                <!--</LinearLayout>-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:layout_gravity="right">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/fffs"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="غزة النصر شارع جامعة القدس"-->
+                    <!--android:textSize="22sp"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_place_24px"-->
+                    <!--android:layout_toRightOf="@+id/fffs"-->
+                    <!--android:layout_marginLeft="15dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/youteops"
+                    android:layout_weight="1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="#D10000"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_youtupe"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/twwetars"
+                    android:layout_weight="1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@color/main"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_twetter"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/facebooks"
+                    android:layout_weight="1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="#12AED2">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/facebooklogo"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/main">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="العودة للصفحة الرئيسية"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/jf"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

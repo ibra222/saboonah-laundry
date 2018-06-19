@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mainLiner"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white">
+
+       <com.ramotion.foldingcell.FoldingCell
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/folding_cell"
+           android:layout_width="match_parent"
+           android:background="@drawable/porders"
+           android:layout_margin="15dp"
+           folding-cell:backSideColor="@color/white"
+           android:layout_height="80dp">
+           ​
+           <FrameLayout
+               android:id="@+id/cell_content_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:visibility="gone">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/porders">
+
+                     <RelativeLayout
+                         android:id="@+id/remain1"
+                         android:layout_width="match_parent"
+                         android:layout_height="80dp"
+                         android:padding="15dp">
+
+                         <TextView
+                             android:id="@+id/title1onhiden"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="طلبية "
+                             android:fontFamily="@font/jf"
+                             android:textSize="18sp"
+                             android:layout_centerVertical="true"
+                             android:layout_alignParentRight="true"/>
+
+                         <TextView
+                             android:id="@+id/ordernumonhiden"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginRight="55dp"
+                             android:text="طلبية 1"
+                             android:fontFamily="@font/jf"
+                             android:textSize="18sp"
+                             android:layout_centerVertical="true"
+                             android:layout_alignParentRight="true"/>
+
+
+                         <Button
+                             android:id="@+id/editbuthiden"
+                             android:layout_toRightOf="@+id/delietbuthid"
+                             android:layout_width="60dp"
+                             android:layout_height="24dp"
+                             android:background="@color/main"
+                             android:text="تعديل"
+                             android:fontFamily="@font/jf"
+                             android:textColor="@color/white"
+                             android:layout_centerVertical="true"/>
+
+                         <Button
+                             android:id="@+id/delietbuthid"
+                             android:layout_alignParentLeft="true"
+                             android:layout_width="60dp"
+                             android:layout_height="24dp"
+                             android:background="#FF4A4A"
+                             android:text="حذف"
+                             android:fontFamily="@font/jf"
+                             android:layout_marginRight="15dp"
+                             android:textColor="@color/white"
+                             android:layout_centerVertical="true"/>
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/remain2"
+                         android:background="@color/white"
+                         android:layout_below="@+id/remain1">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:orientation="vertical">
+
+
+                             <RelativeLayout
+                                 android:id="@+id/stage1actev"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="15dp">
+
+                                 <RelativeLayout
+                                     android:id="@+id/num1"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/circ"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="35dp"
+                                     android:layout_marginTop="15dp"
+                                     android:layout_marginLeft="15dp">
+
+
+
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:text="1"
+                                         android:fontFamily="@font/jf"
+                                         android:textColor="@color/white"
+                                         android:layout_centerVertical="true"
+                                         android:layout_centerHorizontal="true"
+                                         android:textSize="25sp"/>
+
+                                 </RelativeLayout>
+
+
+                                 <TextView
+                                     android:id="@+id/titled"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="مرحلة الاستلام"
+                                     android:fontFamily="@font/jf"
+                                     android:textSize="18sp"
+                                     android:layout_centerVertical="true"
+                                     android:layout_toLeftOf="@+id/num1"/>
+
+                                 <TextView
+
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="باقي 20 دقيقة لوصول فريق التوصيل"
+                                     android:textSize="15sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num1"
+                                     android:layout_marginTop="56dp"/>
+
+                             </RelativeLayout>
+
+                             <RelativeLayout
+                                 android:id="@+id/stage1unactev"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="15dp">
+
+                                 <RelativeLayout
+                                     android:id="@+id/num11"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/circ1"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="35dp"
+                                     android:layout_marginTop="15dp"
+                                     android:layout_marginLeft="15dp">
+
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:text="1"
+                                         android:fontFamily="@font/jf"
+                                         android:textColor="@color/white"
+                                         android:layout_centerVertical="true"
+                                         android:layout_centerHorizontal="true"
+                                         android:textSize="25sp"/>
+
+                                 </RelativeLayout>
+
+                                 <TextView
+                                     android:id="@+id/titled1"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="مرحلة الاستلام"
+                                     android:textSize="18sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_centerVertical="true"
+                                     android:layout_toLeftOf="@+id/num11"/>
+
+                                 <TextView
+
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="باقي 20 دقيقة لوصول فريق التوصيل"
+                                     android:textSize="15sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num11"
+                                     android:layout_marginTop="56dp"/>
+
+                             </RelativeLayout>
+
+                             <RelativeLayout
+                                 android:id="@+id/stage2actev"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="15dp">
+
+                                 <RelativeLayout
+                                     android:id="@+id/num2"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/circ"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="35dp"
+                                     android:layout_marginLeft="15dp"
+                                     android:layout_marginTop="15dp">
+
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:text="2"
+                                         android:fontFamily="@font/jf"
+                                         android:textColor="@color/white"
+                                         android:layout_centerVertical="true"
+                                         android:layout_centerHorizontal="true"
+                                         android:textSize="25sp"/>
+
+                                 </RelativeLayout>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="مرحلة تجهيز الطلبية"
+                                     android:textSize="18sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_centerVertical="true"
+                                     android:layout_toLeftOf="@+id/num2"/>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="100% اكتملت"
+                                     android:textSize="15sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num2"
+                                     android:layout_marginTop="56dp"/>
+
+
+                             </RelativeLayout>
+
+                             <RelativeLayout
+                                 android:id="@+id/stage2unactev"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="15dp">
+
+                                 <RelativeLayout
+                                     android:id="@+id/num22"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/circ1"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="35dp"
+                                     android:layout_marginLeft="15dp"
+                                     android:layout_marginTop="15dp">
+
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:text="2"
+                                         android:fontFamily="@font/jf"
+                                         android:textColor="@color/white"
+                                         android:layout_centerVertical="true"
+                                         android:layout_centerHorizontal="true"
+                                         android:textSize="25sp"/>
+
+                                 </RelativeLayout>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="مرحلة تجهيز الطلبية"
+                                     android:textSize="18sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_centerVertical="true"
+                                     android:layout_toLeftOf="@+id/num22"/>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="100% اكتملت"
+                                     android:textSize="15sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num22"
+                                     android:layout_marginTop="56dp"/>
+
+
+                             </RelativeLayout>
+
+                             <RelativeLayout
+                                 android:id="@+id/stage3actev"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+
+                                 <RelativeLayout
+                                     android:id="@+id/num3"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/circ"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="35dp"
+                                     android:layout_marginTop="15dp"
+                                     android:layout_marginLeft="15dp">
+
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:text="3"
+                                         android:fontFamily="@font/jf"
+                                         android:textColor="@color/white"
+                                         android:layout_centerVertical="true"
+                                         android:layout_centerHorizontal="true"
+                                         android:textSize="25sp"/>
+
+                                 </RelativeLayout>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="مرحلة التسليم"
+                                     android:textSize="18sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginTop="50dp"
+                                     android:layout_toLeftOf="@+id/num3"/>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="باقي 20 دقيقة لوصول فريق التوصيل"
+                                     android:textSize="15sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num3"
+                                     android:layout_marginTop="56dp"/>
+
+                             </RelativeLayout>
+
+                             <RelativeLayout
+                                 android:id="@+id/stage3unactev"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 >
+
+                                 <RelativeLayout
+                                     android:id="@+id/num4"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/circ1"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="35dp"
+                                     android:layout_marginTop="15dp"
+                                     android:layout_marginLeft="15dp">
+
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:text="3"
+                                         android:fontFamily="@font/jf"
+                                         android:textColor="@color/white"
+                                         android:layout_centerVertical="true"
+                                         android:layout_centerHorizontal="true"
+                                         android:textSize="25sp"/>
+
+                                 </RelativeLayout>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="مرحلة التسليم"
+                                     android:textSize="18sp"
+                                     android:layout_centerVertical="true"
+                                     android:layout_marginTop="50dp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num4"/>
+
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="باقي 20 دقيقة لوصول فريق التوصيل"
+                                     android:textSize="15sp"
+                                     android:fontFamily="@font/jf"
+                                     android:layout_toLeftOf="@+id/num4"
+                                     android:layout_marginTop="56dp"/>
+
+                             </RelativeLayout>
+
+                         </LinearLayout>
+                        <!--<include layout="@layout/timeline"></include>-->
+
+                     </RelativeLayout>
+
+                 </RelativeLayout>
+
+
+
+           </FrameLayout>
+           ​
+           <FrameLayout
+               android:id="@+id/cell_title_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:padding="15dp">
+
+                   <TextView
+                       android:id="@+id/title"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="طلبية "
+                       android:textSize="18sp"
+                       android:fontFamily="@font/jf"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"/>
+
+                   <TextView
+                       android:id="@+id/title1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="55dp"
+                       android:text="طلبية 1"
+                       android:textSize="18sp"
+                       android:fontFamily="@font/jf"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"/>
+
+
+                   <Button
+                       android:layout_toRightOf="@+id/deliet"
+                       android:layout_width="60dp"
+                       android:layout_height="24dp"
+                       android:background="@color/main"
+                       android:text="تعديل"
+                       android:fontFamily="@font/jf"
+                       android:textColor="@color/white"
+                       android:layout_centerVertical="true"/>
+
+                   <Button
+                       android:id="@+id/deliet"
+                       android:layout_alignParentLeft="true"
+                       android:layout_width="60dp"
+                       android:layout_height="24dp"
+                       android:background="#FF4A4A"
+                       android:text="حذف"
+                       android:layout_marginRight="15dp"
+                       android:textColor="@color/white"
+                       android:fontFamily="@font/jf"
+                       android:layout_centerVertical="true"/>
+               </RelativeLayout>
+           </FrameLayout>
+           ​
+       </com.ramotion.foldingcell.FoldingCell>
+
+   </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="#F9F9FA"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bash">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_24px"
+            android:layout_alignParentRight="true"
+            android:layout_margin="45dp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/myorders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="طلباتي"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/orders"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blace"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_shopping_cart_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/myorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="سلة المشتريات"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/carts"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blace"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/carts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_shopping_cart_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="راسلنا"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/cont"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blace"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/cont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_speaker_notes_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/ads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الاعلانات"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/adss"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blace"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/adss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_view_carousel_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تابعنا"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/textfol"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blace"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/textfol"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_favorite_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="من نحن"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/abutte"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blace"
+                    android:textStyle="bold"
+                   />
+
+                <ImageView
+                    android:id="@+id/abutte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_book_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right"
+                >
+
+
+                <TextView
+                    android:id="@+id/loguot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" خروج"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/textss"
+                    android:layout_marginRight="0dp"
+                    android:textColor="@color/blace"
+                    />
+
+                <ImageView
+                    android:id="@+id/textss"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_view_carousel_24px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

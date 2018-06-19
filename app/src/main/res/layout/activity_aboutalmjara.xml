@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bash">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoalmjara"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="المجرة من الشركات العريقة في تطوير الانظمة التكنولوجية ، التي تخدم المؤسسات والشركات والمحلات ، لتوفير نظام متكامل يسهل على الزبائن طلب خدماته ومتابعة طلبيته ايأ كانت"
+                android:textAlignment="center"
+                android:fontFamily="@font/jf"
+                android:textSize="18sp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="30dp"
+                />
+
+
+
+             <!--<RelativeLayout-->
+                 <!--android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--android:layout_marginTop="50dp">-->
+
+                 <!--<LinearLayout-->
+                     <!--android:weightSum="100"-->
+                     <!--android:layout_width="match_parent"-->
+                     <!--android:layout_height="wrap_content"-->
+                     <!--android:gravity="center"-->
+                     <!--android:orientation="horizontal">-->
+
+
+                     <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_weight="50"&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+                         <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:id="@+id/ddd"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:text="0589763594"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:textSize="22sp"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_centerVertical="true"/>&ndash;&gt;-->
+
+                         <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:src="@drawable/ic_phone_android_24px"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_toRightOf="@+id/ddd"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_marginLeft="15dp"/>&ndash;&gt;-->
+
+                     <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+                     <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_weight="50"&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                         <!--&lt;!&ndash;android:layout_marginRight="25dp">&ndash;&gt;-->
+
+                         <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:id="@+id/fff"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:text="0589763594"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:textSize="22sp"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_centerVertical="true"/>&ndash;&gt;-->
+
+                         <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:src="@drawable/ic_phone_android_24px"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_toRightOf="@+id/fff"&ndash;&gt;-->
+                             <!--&lt;!&ndash;android:layout_marginLeft="15dp"/>&ndash;&gt;-->
+
+                     <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+                 <!--</LinearLayout>-->
+
+             <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:layout_gravity="right">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/fffs"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="0589763594"-->
+                    <!--android:textSize="22sp"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_phone_android_24px"-->
+                    <!--android:layout_toRightOf="@+id/fffs"-->
+                    <!--android:layout_marginLeft="15dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/youteop"
+                    android:layout_weight="1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="#D10000"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_youtupe"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/twwetar"
+                    android:layout_weight="1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@color/main"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_twetter"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/facebook"
+                    android:layout_weight="1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="#12AED2">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/facebooklogo"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/main">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="العودة للصفحة الرئيسية"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/jf"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

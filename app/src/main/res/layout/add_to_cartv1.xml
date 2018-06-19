@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    card_view:cardCornerRadius="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/main">
+
+            <RelativeLayout
+                android:id="@+id/rel1s"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#213144">
+
+                <TextView
+                    android:id="@+id/titleitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="كنب"
+                    android:fontFamily="@font/jf"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="25dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/jasel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="غسيل"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"/>
+
+                <CheckBox
+                    android:id="@+id/kaoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="كوي"
+                    android:fontFamily="@font/jf"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_toLeftOf="@+id/jasel"
+                    android:layout_marginRight="7dp"/>
+
+                <CheckBox
+                    android:id="@+id/alltype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="غسيل + كوي"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jf"
+                    android:layout_toLeftOf="@+id/kaoe"
+                    android:layout_marginRight="7dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/count_m"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_mainas"/>
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/jf"
+                        android:textSize="30sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/count_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_plaus_fragment"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:background="#454E55"
+                            android:paddingLeft="15dp"
+                            android:fontFamily="@font/jf"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="السعر :"
+                            android:layout_gravity="right"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:paddingLeft="15dp"
+                            android:fontFamily="@font/jf"
+                            android:layout_marginLeft="45dp"
+                            android:textColor="@color/white"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textSize="25sp"
+                            android:fontFamily="@font/jf"
+                            android:textStyle="bold"
+                            android:background="#454E55"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="الاجمالي :"
+                            android:layout_gravity="right"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/jf"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="45dp"
+                            android:textColor="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="#213444"
+                    android:fontFamily="@font/jf"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="اكمال الطلبية"/>
+
+
+                <Button
+                    android:id="@+id/aprove_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="#D40545"
+                    android:fontFamily="@font/jf"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_margin="15dp"
+                    android:text="اعتماد "/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
